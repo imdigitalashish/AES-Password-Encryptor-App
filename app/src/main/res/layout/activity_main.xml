@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_text_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter the key"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decrypt"
+        android:text="" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/et_text_key"
+        android:id="@+id/et_value"
+        android:hint="Enter The Message" />
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypt the message"
+        android:onClick="encrypt"
+        android:layout_below="@id/et_value"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/decrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypt the message"
+        android:onClick="decrypt"
+        android:layout_below="@id/encrypt"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
